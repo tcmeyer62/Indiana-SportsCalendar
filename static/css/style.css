@@ -44,6 +44,10 @@ header h1 {
     cursor: pointer;
 }
 
+.toolbar button:hover {
+    background: #ddd;
+}
+
 .toolbar input {
     margin-left: auto;
     padding: 8px 12px;
@@ -73,7 +77,7 @@ header h1 {
 .timeline-header,
 .timeline-row {
     display: grid;
-    grid-template-columns: 220px repeat(12, minmax(110px, 1fr));
+    grid-template-columns: 220px repeat(12, var(--month-width, 110px));
     min-width: 1540px;
 }
 
