@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const timeline = document.querySelector(".timeline");
 const toolbarButtons = document.querySelectorAll(".toolbar button");
-
+const timelineViewport = document.querySelector(".timeline-viewport");
 const previousButton = document.getElementById("previousButton");
 const todayButton = document.getElementById("todayButton");
 const nextButton = document.getElementById("nextButton");
@@ -41,14 +41,11 @@ const nextButton = document.getElementById("nextButton");
     });
 
     // Month navigation
-    function scrollMonths(direction) {
-        const amount = monthWidth * 3;
+function scrollMonths(direction) {
+    const amount = monthWidth * 3;
 
-        timeline.scrollBy({
-            left: direction * amount,
-            behavior: "smooth"
-        });
-    }
+    timelineViewport.scrollLeft += direction * amount;
+}
 
     previousButton.addEventListener("click", function () {
         scrollMonths(-1);
@@ -60,15 +57,16 @@ const nextButton = document.getElementById("nextButton");
 
 todayButton.addEventListener("click", function () {
     const currentMonth = new Date().getMonth();
+    const months = document.querySelectorAll(".timeline-header .month");
 
-    const teamColumnWidth = 220;
-    const monthPosition = teamColumnWidth + (currentMonth * monthWidth);
+    if (months.length === 12) {
+        const targetMonth = months[currentMonth];
 
-    timeline.scrollTo({
-        left: monthPosition,
-        behavior: "smooth"
-    });
+        timelineViewport.scrollLeft =
+            targetMonth.offsetLeft - 220 + (monthWidth * 2);
+    }
 });
 
-    updateZoom();
+updateZoom();
+
 });

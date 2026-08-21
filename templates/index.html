@@ -13,13 +13,13 @@
 
 <header>
     <h1>Indiana Sports Calendar</h1>
-<div class="version">Version 0.7</div>
+    <div class="version">Version 0.7</div>
 </header>
 
 <nav class="toolbar">
-<button id="previousButton">◀ Previous</button>
-<button id="todayButton">Today</button>
-<button id="nextButton">Next ▶</button>
+    <button id="previousButton">◀ Previous</button>
+    <button id="todayButton">Today</button>
+    <button id="nextButton">Next ▶</button>
     <button>- Zoom</button>
     <button>+ Zoom</button>
 
@@ -37,66 +37,72 @@
     <label><input type="checkbox" checked> IndyCar</label>
 </section>
 
-<section class="timeline">
+<section class="timeline-viewport">
 
-    <div class="timeline-header">
-        <div class="team-column">Team</div>
+    <div class="timeline">
 
-        <div class="month">Jan</div>
-        <div class="month">Feb</div>
-        <div class="month">Mar</div>
-        <div class="month">Apr</div>
-        <div class="month">May</div>
-        <div class="month">Jun</div>
-        <div class="month">Jul</div>
-        <div class="month">Aug</div>
-        <div class="month">Sep</div>
-        <div class="month">Oct</div>
-        <div class="month">Nov</div>
-        <div class="month">Dec</div>
-    </div>
+        <div class="timeline-header">
 
-    {% for game in schedule %}
+            <div class="team-column">Team</div>
 
-    <div class="timeline-row">
+            <div class="month">Jan</div>
+            <div class="month">Feb</div>
+            <div class="month">Mar</div>
+            <div class="month">Apr</div>
+            <div class="month">May</div>
+            <div class="month">Jun</div>
+            <div class="month">Jul</div>
+            <div class="month">Aug</div>
+            <div class="month">Sep</div>
+            <div class="month">Oct</div>
+            <div class="month">Nov</div>
+            <div class="month">Dec</div>
 
-        <div class="team-column">
-            <strong>{{ game.Team }}</strong>
         </div>
 
-        {% for month_number in range(1, 13) %}
+        {% for game in schedule %}
 
-        <div class="month-cell">
+        <div class="timeline-row">
 
-            {% if game.Date and game.Date.split('-')[1]|int == month_number %}
+            <div class="team-column">
+                <strong>{{ game.Team }}</strong>
+            </div>
 
-            <div class="game-card">
+            {% for month_number in range(1, 13) %}
 
-                <strong>{{ game.Opponent }}</strong>
+            <div class="month-cell">
 
-                <div>
-                    {{ game.Date }}
+                {% if game.Date and game.Date.split('-')[1]|int == month_number %}
+
+                <div class="game-card">
+
+                    <strong>{{ game.Opponent }}</strong>
+
+                    <div>
+                        {{ game.Date }}
+                    </div>
+
+                    <div>
+                        {{ game.Time }}
+                    </div>
+
+                    <div>
+                        {{ game.HomeAway }}
+                    </div>
+
                 </div>
 
-                <div>
-                    {{ game.Time }}
-                </div>
-
-                <div>
-                    {{ game.HomeAway }}
-                </div>
+                {% endif %}
 
             </div>
 
-            {% endif %}
+            {% endfor %}
 
         </div>
 
         {% endfor %}
 
     </div>
-
-    {% endfor %}
 
 </section>
 

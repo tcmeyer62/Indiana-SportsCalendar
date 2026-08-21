@@ -66,12 +66,16 @@ header h1 {
     color: #222;
 }
 
-.timeline {
+.timeline-viewport {
     margin: 20px;
     background: white;
     border: 1px solid #bbb;
     overflow-x: auto;
-    min-width: 1100px;
+}
+
+.timeline {
+    background: white;
+    min-width: 3200px;
 }
 
 .timeline-header,
