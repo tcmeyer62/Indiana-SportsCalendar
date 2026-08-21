@@ -3,11 +3,11 @@ console.log("Indiana Sports Calendar Loaded");
 document.addEventListener("DOMContentLoaded", function () {
 
     const timeline = document.querySelector(".timeline");
-    const toolbarButtons = document.querySelectorAll(".toolbar button");
+const toolbarButtons = document.querySelectorAll(".toolbar button");
 
-    const previousButton = toolbarButtons[0];
-    const todayButton = toolbarButtons[1];
-    const nextButton = toolbarButtons[2];
+const previousButton = document.getElementById("previousButton");
+const todayButton = document.getElementById("todayButton");
+const nextButton = document.getElementById("nextButton");
 
     let monthWidth = 110;
 
@@ -58,11 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollMonths(1);
     });
 
-    todayButton.addEventListener("click", function () {
-        timeline.scrollTo({
-            left: monthWidth * 3,
-            behavior: "smooth"
-        });
+todayButton.addEventListener("click", function () {
+    const currentMonth = new Date().getMonth();
+
+    const teamColumnWidth = 220;
+    const monthPosition = teamColumnWidth + (currentMonth * monthWidth);
+
+    timeline.scrollTo({
+        left: monthPosition,
+        behavior: "smooth"
     });
+});
 
     updateZoom();
+});
