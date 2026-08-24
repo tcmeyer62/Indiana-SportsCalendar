@@ -13,7 +13,7 @@
 
 <header>
     <h1>Indiana Sports Calendar</h1>
-    <div class="version">Version 0.7</div>
+    <div class="version">Version 0.9</div>
 </header>
 
 <nav class="toolbar">
@@ -30,8 +30,8 @@
     <label><input type="checkbox" checked> Colts</label>
     <label><input type="checkbox" checked> Pacers</label>
     <label><input type="checkbox" checked> Fever</label>
-    <label><input type="checkbox" checked> Purdue</label>
-    <label><input type="checkbox" checked> Indiana</label>
+<label><input type="checkbox" checked> Indiana</label>
+<label><input type="checkbox" checked> Purdue</label>
     <label><input type="checkbox" checked> Notre Dame</label>
     <label><input type="checkbox" checked> Butler</label>
     <label><input type="checkbox" checked> IndyCar</label>
@@ -74,21 +74,21 @@
 
                 {% if game.Date and game.Date.split('-')[1]|int == month_number %}
 
-                <div class="game-card">
+<div class="game-card">
 
-                    <strong>{{ game.Opponent }}</strong>
+    <strong class="game-opponent">{{ game.Opponent }}</strong>
 
-                    <div>
-                        {{ game.Date }}
-                    </div>
+    <div class="game-date">
+        {{ game.Date }}
+    </div>
 
-                    <div>
-                        {{ game.Time }}
-                    </div>
+    <div class="game-time">
+        {{ game.Time }}
+    </div>
 
-                    <div>
-                        {{ game.HomeAway }}
-                    </div>
+    <div class="game-location">
+        {{ game.HomeAway }}
+    </div>
 
                 </div>
 
