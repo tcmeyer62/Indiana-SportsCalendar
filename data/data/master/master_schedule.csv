@@ -1,4 +1,18 @@
 Sport,Team,League,Season,Date,Time,Opponent,HomeAway,Venue,City,State,TV,EventType,Notes
-Football,Indianapolis Colts,NFL,2026,2026-09-13,1:00 PM,Houston Texans,Home,Lucas Oil Stadium,Indianapolis,IN,CBS,Regular Season,Opening Day
-Football,Indianapolis Colts,NFL,2026,2026-09-20,1:00 PM,Tennessee Titans,Away,Nissan Stadium,Nashville,TN,FOX,Regular Season,
-Basketball,Indiana Pacers,NBA,2026,2026-10-22,7:00 PM,Chicago Bulls,Home,Gainbridge Fieldhouse,Indianapolis,IN,ESPN,Regular Season,Home Opener
+Football,Indianapolis Colts,NFL,2026,2026-09-13,1:00 PM,Baltimore Ravens,Home,Lucas Oil Stadium,Indianapolis,IN,CBS,Regular Season,Opening Day
+Football,Indianapolis Colts,NFL,2026,2026-09-20,8:20 PM,Kansas City Chiefs,Away,Arrowhead Stadium,Kansas City,MO,NBC/Universo,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-09-27,1:00 PM,Houston Texans,Home,Lucas Oil Stadium,Indianapolis,IN,CBS,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-10-04,9:30 AM,Washington Commanders,Home,Tottenham Hotspur Stadium,London,UK,NFL Network,Regular Season,London Game
+Football,Indianapolis Colts,NFL,2026,2026-10-11,1:00 PM,Pittsburgh Steelers,Away,Acrisure Stadium,Pittsburgh,PA,CBS,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-10-18,1:00 PM,Tennessee Titans,Home,Lucas Oil Stadium,Indianapolis,IN,FOX,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-10-25,1:00 PM,Minnesota Vikings,Away,U.S. Bank Stadium,Minneapolis,MN,CBS,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-11-01,1:00 PM,Jacksonville Jaguars,Away,EverBank Stadium,Jacksonville,FL,CBS,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-11-08,1:00 PM,Dallas Cowboys,Home,Lucas Oil Stadium,Indianapolis,IN,FOX,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-11-15,1:00 PM,Miami Dolphins,Home,Lucas Oil Stadium,Indianapolis,IN,CBS,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-11-19,8:15 PM,Houston Texans,Away,Reliant Stadium,Houston,TX,Prime Video,Regular Season,Thursday Night Football
+Football,Indianapolis Colts,NFL,2026,2026-11-29,1:00 PM,New York Giants,Home,Lucas Oil Stadium,Indianapolis,IN,FOX,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-12-13,1:00 PM,Philadelphia Eagles,Away,Lincoln Financial Field,Philadelphia,PA,FOX,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-12-20,1:00 PM,Tennessee Titans,Away,Nissan Stadium,Nashville,TN,CBS,Regular Season,
+Football,Indianapolis Colts,NFL,2026,2026-12-27,TBD,Cincinnati Bengals,Home,Lucas Oil Stadium,Indianapolis,IN,TBD,Regular Season,
+Football,Indianapolis Colts,NFL,2027,2027-01-03,1:00 PM,Cleveland Browns,Away,Huntington Bank Field,Cleveland,OH,FOX,Regular Season,
+Football,Indianapolis Colts,NFL,2027,2027-01-10,TBD,Jacksonville Jaguars,Home,Lucas Oil Stadium,Indianapolis,IN,TBD,Regular Season,
