@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import csv
 
 app = Flask(__name__)
@@ -14,7 +14,23 @@ def home():
         reader = csv.DictReader(file)
         schedule = list(reader)
 
-    return render_template("index.html", schedule=schedule)
+    # Get the selected year (default: 2026)
+    year = request.args.get("year", "2026")
+
+    # Keep only games from the selected year
+    schedule = [
+        game for game in schedule
+        if game.get("Date", "").startswith(year + "-")
+    ]
+
+    # Sort games by date
+    schedule.sort(key=lambda game: game.get("Date", ""))
+
+    return render_template(
+        "index.html",
+        schedule=schedule,
+        selected_year=year
+    )
 
 
 if __name__ == "__main__":

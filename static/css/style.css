@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 
-body { 
-       margin: 0;
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f6f8;
     color: #222;
@@ -25,6 +25,7 @@ header h1 {
     font-size: 14px;
     opacity: 0.8;
 }
+
 .toolbar {
     display: flex;
     gap: 8px;
@@ -53,6 +54,7 @@ header h1 {
     width: 220px;
     color: #222;
 }
+
 .filters {
     padding: 12px 20px;
     background: #fafafa;
@@ -63,6 +65,7 @@ header h1 {
     margin-right: 18px;
     color: #222;
 }
+
 .timeline-viewport {
     margin: 20px;
     background: white;
@@ -72,13 +75,17 @@ header h1 {
 
 .timeline {
     background: white;
-    min-width: 3200px;
+    width: max-content;
+    min-width: 100%;
 }
+
 .timeline-header,
 .timeline-row {
     display: grid;
-    grid-template-columns: 220px repeat(12, var(--month-width, 110px));
-    min-width: 1540px;
+    grid-template-columns:
+        220px repeat(12, var(--month-width, 180px));
+    width: max-content;
+    min-width: 100%;
 }
 
 .timeline-header {
@@ -126,12 +133,18 @@ header h1 {
 
 .game-card {
     padding: 10px;
+    margin-bottom: 8px;
     background: #eef2f7;
     border: 1px solid #9ca3af;
     border-radius: 5px;
     font-size: 13px;
     line-height: 1.4;
     color: #222;
+    overflow-wrap: break-word;
+}
+
+.game-card:last-child {
+    margin-bottom: 0;
 }
 
 .game-opponent {
@@ -155,4 +168,8 @@ header h1 {
 .game-location {
     font-size: 12px;
     font-weight: bold;
+}
+
+.timeline-row[style*="display: none"] {
+    display: none !important;
 }

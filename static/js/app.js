@@ -3,13 +3,23 @@ console.log("Indiana Sports Calendar Loaded");
 document.addEventListener("DOMContentLoaded", function () {
 
     const timeline = document.querySelector(".timeline");
-const toolbarButtons = document.querySelectorAll(".toolbar button");
-const timelineViewport = document.querySelector(".timeline-viewport");
-const previousButton = document.getElementById("previousButton");
-const todayButton = document.getElementById("todayButton");
-const nextButton = document.getElementById("nextButton");
+    const timelineViewport =
+        document.querySelector(".timeline-viewport");
 
-    let monthWidth = 110;
+    const previousButton =
+        document.getElementById("previousButton");
+
+    const todayButton =
+        document.getElementById("todayButton");
+
+    const nextButton =
+        document.getElementById("nextButton");
+
+    const toolbarButtons =
+        document.querySelectorAll(".toolbar button");
+
+    // Starting width for each month
+    let monthWidth = 220;
 
     function updateZoom() {
         timeline.style.setProperty(
@@ -29,23 +39,26 @@ const nextButton = document.getElementById("nextButton");
                     monthWidth += 20;
                 }
 
-                if (button.textContent.includes("-")) {
+                if (button.textContent.includes("−") ||
+                    button.textContent.includes("-")) {
                     monthWidth -= 20;
                 }
 
-                monthWidth = Math.max(70, Math.min(monthWidth, 250));
+                monthWidth = Math.max(
+                    120,
+                    Math.min(monthWidth, 350)
+                );
 
                 updateZoom();
             });
         }
     });
 
-    // Month navigation
-function scrollMonths(direction) {
-    const amount = monthWidth * 3;
-
-    timelineViewport.scrollLeft += direction * amount;
-}
+    // Previous and Next move three months
+    function scrollMonths(direction) {
+        timelineViewport.scrollLeft +=
+            direction * monthWidth * 3;
+    }
 
     previousButton.addEventListener("click", function () {
         scrollMonths(-1);
@@ -55,18 +68,54 @@ function scrollMonths(direction) {
         scrollMonths(1);
     });
 
-todayButton.addEventListener("click", function () {
-    const currentMonth = new Date().getMonth();
-    const months = document.querySelectorAll(".timeline-header .month");
+    // Today moves to the current month
+    todayButton.addEventListener("click", function () {
 
-    if (months.length === 12) {
-        const targetMonth = months[currentMonth];
+        const currentMonth = new Date().getMonth();
 
         timelineViewport.scrollLeft =
-            targetMonth.offsetLeft - 220 + (monthWidth * 2);
-    }
-});
+            currentMonth * monthWidth;
+    });
 
-updateZoom();
+    // Set initial month width
+    updateZoom();
+       // Team filters
+    const filters = document.querySelectorAll(
+        ".filters input[type='checkbox']"
+    );
+
+    const teamRows = document.querySelectorAll(
+        ".timeline-row"
+    );
+
+    function updateFilters() {
+        const selectedTeams = Array.from(filters)
+            .filter(box => box.checked)
+            .map(box =>
+                box.parentElement.textContent.trim().toLowerCase()
+            );
+
+        teamRows.forEach(function (row) {
+            const teamName = row.querySelector(
+                ".team-column"
+            ).textContent.trim().toLowerCase();
+
+            const isSelected = selectedTeams.some(
+                team => teamName.includes(team)
+            );
+
+            row.style.setProperty(
+                "display",
+                isSelected ? "grid" : "none",
+                "important"
+            );
+        });
+    }
+
+    filters.forEach(function (checkbox) {
+        checkbox.addEventListener("change", updateFilters);
+    });
+
+    updateFilters();
 
 });

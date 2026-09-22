@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Indiana Sports Calendar</title>
 
     <link rel="stylesheet"
@@ -17,11 +19,23 @@
 </header>
 
 <nav class="toolbar">
+ <label for="yearSelector">Year:</label>
+<select id="yearSelector"
+        onchange="window.location.href='/?year=' + this.value">
+    <option value="2026"
+        {% if selected_year == '2026' %}selected{% endif %}>
+        2026
+    </option>
+    <option value="2027"
+        {% if selected_year == '2027' %}selected{% endif %}>
+        2027
+    </option>
+</select>   
     <button id="previousButton">◀ Previous</button>
     <button id="todayButton">Today</button>
     <button id="nextButton">Next ▶</button>
-    <button>- Zoom</button>
-    <button>+ Zoom</button>
+    <button id="zoomOut">− Zoom</button>
+    <button id="zoomIn">+ Zoom</button>
 
     <input type="text" placeholder="Search...">
 </nav>
@@ -30,8 +44,8 @@
     <label><input type="checkbox" checked> Colts</label>
     <label><input type="checkbox" checked> Pacers</label>
     <label><input type="checkbox" checked> Fever</label>
-<label><input type="checkbox" checked> Indiana</label>
-<label><input type="checkbox" checked> Purdue</label>
+    <label><input type="checkbox" checked> Indiana</label>
+    <label><input type="checkbox" checked> Purdue</label>
     <label><input type="checkbox" checked> Notre Dame</label>
     <label><input type="checkbox" checked> Butler</label>
     <label><input type="checkbox" checked> IndyCar</label>
@@ -42,7 +56,6 @@
     <div class="timeline">
 
         <div class="timeline-header">
-
             <div class="team-column">Team</div>
 
             <div class="month">Jan</div>
@@ -57,42 +70,49 @@
             <div class="month">Oct</div>
             <div class="month">Nov</div>
             <div class="month">Dec</div>
-
         </div>
 
-        {% for game in schedule %}
+        {% for team_name, team_games in
+           schedule|groupby('Team') %}
 
         <div class="timeline-row">
 
             <div class="team-column">
-                <strong>{{ game.Team }}</strong>
+                <strong>{{ team_name }}</strong>
             </div>
 
             {% for month_number in range(1, 13) %}
 
             <div class="month-cell">
 
-                {% if game.Date and game.Date.split('-')[1]|int == month_number %}
+                {% for game in team_games %}
 
-<div class="game-card">
+                    {% if game.Date and
+                       game.Date.split('-')[1]|int == month_number %}
 
-    <strong class="game-opponent">{{ game.Opponent }}</strong>
+                    <div class="game-card">
 
-    <div class="game-date">
-        {{ game.Date }}
-    </div>
+                        <strong class="game-opponent">
+                            {{ game.Opponent }}
+                        </strong>
 
-    <div class="game-time">
-        {{ game.Time }}
-    </div>
+                        <div class="game-date">
+                            {{ game.Date }}
+                        </div>
 
-    <div class="game-location">
-        {{ game.HomeAway }}
-    </div>
+                        <div class="game-time">
+                            {{ game.Time }}
+                        </div>
 
-                </div>
+                        <div class="game-location">
+                            {{ game.HomeAway }}
+                        </div>
 
-                {% endif %}
+                    </div>
+
+                    {% endif %}
+
+                {% endfor %}
 
             </div>
 
