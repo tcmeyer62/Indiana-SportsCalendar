@@ -1,0 +1,31 @@
+Sport,Team,League,Season,Date,Time,Opponent,HomeAway,Venue,City,State,TV,EventType,Notes
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-23,2:00 PM,TBD,Neutral,Caesars Superdome,New Orleans,LA,ESPN,Bowl,New Orleans Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-23,5:30 PM,TBD,Neutral,Amon G. Carter Stadium,Fort Worth,TX,ESPN,Bowl,Lockheed Martin Armed Forces Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-23,7:30 PM,TBD,Neutral,Snapdragon Stadium,San Diego,CA,CW Network,Bowl,SDCCU Poinsettia Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-23,9:00 PM,TBD,Neutral,Ford Center at The Star,Frisco,TX,ESPN,Bowl,Frisco Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-24,2:30 PM,TBD,Neutral,University Stadium,Albuquerque,NM,ESPN,Bowl,Isleta New Mexico Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-24,7:00 PM,TBD,Neutral,Clarence T.C. Ching Athletics Complex,Honolulu,HI,ESPN,Bowl,Sheraton Hawai’i Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-26,12:00 PM,TBD,Neutral,Yankee Stadium,Bronx,NY,ABC,Bowl,Bad Boy Mowers Pinstripe Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-26,2:00 PM,TBD,Neutral,Fenway Park,Boston,MA,ESPN,Bowl,Wasabi Fenway Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-26,3:30 PM,TBD,Neutral,Bank of America Stadium,Charlotte,NC,ABC,Bowl,Duke’s Mayo Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-26,5:30 PM,TBD,Neutral,Hancock Whitney Stadium,Mobile,AL,ESPN,Bowl,68 Ventures Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-26,7:30 PM,TBD,Neutral,Mountain America Stadium,Tempe,AZ,ABC,Bowl,Cactus Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-28,2:00 PM,TBD,Neutral,Navy-Marine Corps Memorial Stadium,Annapolis,MD,ESPN,Bowl,Freedom Mortgage Military Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-28,5:00 PM,TBD,Neutral,Snapdragon Stadium,San Diego,CA,CW Network,Bowl,Holiday Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-29,2:00 PM,TBD,Neutral,Protective Stadium,Birmingham,AL,ESPN,Bowl,JLab Birmingham Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-29,5:30 PM,TBD,Neutral,Camping World Stadium,Orlando,FL,ESPN,Bowl,Pop-Tarts Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-29,9:00 PM,TBD,Neutral,Alamodome,San Antonio,TX,ESPN,Bowl,Valero Alamo Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-30,11:30 AM,TBD,Neutral,EverBank Stadium,Jacksonville,FL,ESPN,Bowl,TaxSlayer Gator Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-30,3:00 PM,TBD,Neutral,Nissan Stadium,Nashville,TN,ESPN,Bowl,Liberty Mutual Music City Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-30,7:30 PM,CFP Quarterfinal Winner TBD,Neutral,State Farm Stadium,Glendale,AZ,TNT/truTV/HBO Max,CFP Quarterfinal,VRBO Fiesta Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-31,12:00 PM,TBD,Neutral,Raymond James Stadium,Tampa,FL,ESPN,Bowl,ReliaQuest Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2027-01-01,12:00 PM,CFP Quarterfinal Winner TBD,Neutral,Rose Bowl Stadium,Pasadena,CA,TNT/truTV/HBO Max,CFP Quarterfinal,Rose Bowl Game
+Football,NCAA FBS Bowls,NCAA,2026,2027-01-01,4:00 PM,CFP Quarterfinal Winner TBD,Neutral,Mercedes-Benz Stadium,Atlanta,GA,ABC/ESPN,CFP Quarterfinal,Chick-fil-A Peach Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2027-01-01,8:00 PM,CFP Quarterfinal Winner TBD,Neutral,AT&T Stadium,Arlington,TX,ESPN,CFP Quarterfinal,Goodyear Cotton Bowl Classic
+Football,NCAA FBS Bowls,NCAA,2026,2027-01-14,7:30 PM,CFP Quarterfinal Winner TBD,Neutral,Hard Rock Stadium,Miami Gardens,FL,TNT/truTV/HBO Max,CFP Semifinal,Capital One Orange Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2027-01-15,7:30 PM,CFP Quarterfinal Winner TBD,Neutral,Caesars Superdome,New Orleans,LA,ABC/ESPN,CFP Semifinal,Allstate Sugar Bowl
+Football,NCAA FBS Bowls,NCAA,2026,2027-01-25,7:30 PM,CFP Semifinal Winner TBD,Neutral,Allegiant Stadium,Las Vegas,NV,ABC/ESPN,CFP National Championship,National Championship
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-18,8:00 PM,First Round Winner TBD,Neutral,TBD,TBD,TBD,ESPN,CFP First Round,First Round Game 1
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-19,12:00 PM,First Round Winner TBD,Neutral,TBD,TBD,TBD,ABC/ESPN,CFP First Round,First Round Game 2
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-19,3:30 PM,First Round Winner TBD,Neutral,TBD,TBD,TBD,TNT/truTV/HBO Max,CFP First Round,First Round Game 3
+Football,NCAA FBS Bowls,NCAA,2026,2026-12-19,7:30 PM,First Round Winner TBD,Neutral,TBD,TBD,TBD,TNT/truTV/HBO Max,CFP First Round,First Round Game 4
