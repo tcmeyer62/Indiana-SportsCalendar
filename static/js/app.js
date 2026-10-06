@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ).textContent.trim().toLowerCase();
 
             const isSelected = selectedTeams.some(
-                team => teamName.includes(team) || team.includes(teamName)
+                team => teamName === team
             );
 
             row.style.setProperty(
