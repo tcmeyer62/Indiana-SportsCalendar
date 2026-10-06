@@ -118,4 +118,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateFilters();
 
+    const searchInput = document.getElementById("searchInput");
+    searchInput.addEventListener("input", function () {
+        const term = searchInput.value.trim().toLowerCase();
+        teamRows.forEach(function (row) {
+            const show = term === "" || row.textContent.toLowerCase().includes(term);
+            row.style.setProperty("display", show ? "grid" : "none", "important");
+        });
+    });
+
 });
