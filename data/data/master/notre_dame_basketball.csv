@@ -1,14 +1,35 @@
 Sport,Team,League,Season,Date,Time,Opponent,HomeAway,Venue,City,State,TV,EventType,Notes
 Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-01,9:30 AM,Villanova,Neutral,La PalaTiziano,Rome,ITA,FOX,Regular Season,Rome
 Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-05,TBA,Mercyhurst,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-09,TBA,Eastern Illinois,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-11,TBA,South Carolina State,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-17,TBA,Florida,Neutral,Michelob ULTRA Arena,Las Vegas,NV,TBA,Regular Season,Players Era 8
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-18,TBA,TBD,Neutral,Michelob ULTRA Arena,Las Vegas,NV,TBA,Regular Season,Players Era 8
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-19,TBA,TBD,Neutral,Michelob ULTRA Arena,Las Vegas,NV,TBA,Regular Season,Players Era 8
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-24,TBA,Stanford,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,ACC
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-28,TBA,Virginia Tech,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,ACC
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-01,TBA,Georgia Tech,Away,McCamish Pavilion,Atlanta,GA,TBA,Regular Season,ACC
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-04,TBA,Virginia,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,ACC
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-07,TBA,Miami,Away,Watsco Center,Coral Gables,FL,TBA,Regular Season,ACC
-Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-12,TBA,Wake Forest,Home,Purcell Pavilion,South Bend,IN,TBA,Regular Season,ACC
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-09,TBA,Eastern Illinois,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-11,TBA,South Carolina State,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-17,4:30 PM,Florida,Neutral,Michelob ULTRA Arena,Las Vegas,NV,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-18,TBA,Houston or Rutgers,Neutral,Michelob ULTRA Arena,Las Vegas,NV,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-24,TBA,Central Michigan,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-11-28,TBA,Stonehill,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-02,TBA,Vanderbilt,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-05,TBA,TCU,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-09,TBA,Dartmouth,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-12,TBA,Le Moyne,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-19,TBA,Marquette,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-22,TBA,Bellarmine,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2026-12-29,TBA,Pittsburgh,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-02,TBA,Virginia Tech,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-06,TBA,Syracuse,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-09,TBA,Louisville,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-13,TBA,Miami,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-16,TBA,Clemson,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-20,TBA,Georgia Tech,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-23,TBA,Boston College,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-27,TBA,Duke,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-01-30,TBA,North Carolina,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-03,TBA,Wake Forest,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-06,TBA,NC State,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-10,TBA,Virginia,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-13,TBA,Florida State,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-17,TBA,California,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-20,TBA,Stanford,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-24,TBA,SMU,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-02-27,TBA,Pittsburgh,Away,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-03-03,TBA,Louisville,Home,,,,TBA,Regular Season,
+Basketball,Notre Dame Fighting Irish,NCAA,2026,2027-03-06,TBA,Virginia Tech,Away,,,,TBA,Regular Season,
