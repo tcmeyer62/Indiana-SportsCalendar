@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedTeams = Array.from(filters)
             .filter(box => box.checked)
             .map(box =>
-                box.parentElement.textContent.trim().toLowerCase()
+                box.value.trim().toLowerCase()
             );
 
         teamRows.forEach(function (row) {
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ).textContent.trim().toLowerCase();
 
             const isSelected = selectedTeams.some(
-                team => teamName.includes(team)
+                team => teamName.includes(team) || team.includes(teamName)
             );
 
             row.style.setProperty(
