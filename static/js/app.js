@@ -88,43 +88,35 @@ document.addEventListener("DOMContentLoaded", function () {
         ".timeline-row"
     );
 
-    function updateFilters() {
-        const selectedTeams = Array.from(filters)
-            .filter(box => box.checked)
-            .map(box =>
-                box.value.trim().toLowerCase()
-            );
+function updateDisplay() {
+    const selectedTeams = Array.from(filters)
+        .filter(box => box.checked)
+        .map(box => box.value.trim().toLowerCase());
 
-        teamRows.forEach(function (row) {
-            const teamName = row.querySelector(
-                ".team-column"
-            ).textContent.trim().toLowerCase();
+    const term = searchInput.value.trim().toLowerCase();
 
-            const isSelected = selectedTeams.some(
-                team => teamName === team
-            );
+    teamRows.forEach(function (row) {
+        const teamName = row.querySelector(".team-column")
+            .textContent.trim().toLowerCase();
 
-            row.style.setProperty(
-                "display",
-                isSelected ? "grid" : "none",
-                "important"
-            );
-        });
-    }
+        const teamSelected = selectedTeams.includes(teamName);
+        const searchMatches =
+            term === "" || row.textContent.toLowerCase().includes(term);
 
-    filters.forEach(function (checkbox) {
-        checkbox.addEventListener("change", updateFilters);
+        row.style.setProperty(
+            "display",
+            teamSelected && searchMatches ? "grid" : "none",
+            "important"
+        );
     });
+}
 
-    updateFilters();
+filters.forEach(function (checkbox) {
+    checkbox.addEventListener("change", updateDisplay);
+});
 
-    const searchInput = document.getElementById("searchInput");
-    searchInput.addEventListener("input", function () {
-        const term = searchInput.value.trim().toLowerCase();
-        teamRows.forEach(function (row) {
-            const show = term === "" || row.textContent.toLowerCase().includes(term);
-            row.style.setProperty("display", show ? "grid" : "none", "important");
-        });
-    });
+searchInput.addEventListener("input", updateDisplay);
+
+updateDisplay();
 
 });
